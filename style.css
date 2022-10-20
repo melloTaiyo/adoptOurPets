@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root{
+--ff-primary: "Outfit", sans-serif;
+--ff-body: var(--ff-primary);
+
+--fs-heading-L: 1.5rem;
+--fs-heading-M: 1.3rem;
+--fs-heading-S: 1.1rem;
+--fs-text: 0.9rem;
+font-size: 16px;
+
+--margin: 1rem 0;
+
+--background: hsla(0, 0%, 96%, 1);
+--heading-color:  #f1a974;
+--text-color: hsla(0, 0%, 33%, 1);
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--ff-body);
+    background:  #fff;
+}
+
+.title{
+    color: var(--heading-color);
+    font-size: var(--fs-heading-M);
+    margin: var(--margin);
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;   
+    max-width: 35rem;
+    height: auto;
+    margin: auto;
+    padding: 1rem 2rem;
+    background: var(--background);    
+    border-radius: 1rem;
+    border: solid 0.3rem #FDDCC4;
+}
+
+img{    
+    margin: auto;
+    width: 45%;
+    max-height: 15rem;
+}
+
+#name {
+    color: var(--text-color);
+    font-size: var(--fs-heading-L);
+    margin-bottom: 1rem;
+}
+
+#breed{
+    font-size: var(--fs-text);
+    margin: var(--margin);
+}
+
+#info{
+    font-size: var(--fs-heading-S);
+    text-align: justify;
+    margin: var(--margin);
+    height: 7.1rem;
+    line-height: 1.7rem;
+}
+
+.button-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: var(--margin);
+    padding-top: 1rem;
+}
+
+.prev-btn, .next-btn{
+    background-image: url(./images/Arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 20%;
+    border: solid 0.01rem  #f1a974;
+}
+
+.next-btn{
+    transform: rotate(180deg);    
+}
+
+.random-btn{
+    font-family: var(--ff-body);
+    font-size: var(--fs-heading-S);
+    width: 8rem;
+    height: 2rem;
+    border-radius: 10%;
+    border: solid 0.01rem  #f1a974;
+}
+
+.prev-btn:hover, .next-btn:hover, .random-btn:hover{
+    background-color: rgb(252, 222, 208);
+    opacity: 70%;
+}
